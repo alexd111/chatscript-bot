@@ -1,0 +1,121 @@
+﻿file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HARRY/simplecontrol.top 0
+    macro: ^harry 2
+          line: 3 0
+          line: 5 54
+          line: 6 89
+          line: 8 108
+          line: 9 131
+          line: 12 0
+    topic: ~control 16
+        rule: ~control.0.0 u:  19
+          line: 20 0
+        rule: ~control.1.0 u:  22
+          line: 22 0
+        rule: ~control.2.0 u:  23
+          line: 23 0
+        rule: ~control.3.0 u:  25
+          line: 25 0
+        rule: ~control.4.0 u:  26
+          line: 26 0
+        rule: ~control.5.0 u:  27
+          line: 27 0
+        rule: ~control.6.0 u:  28
+          line: 28 0
+        rule: ~control.7.0 u:  29
+          line: 29 0
+        rule: ~control.8.0 u:  30
+          line: 30 0
+        rule: ~control.9.0 u:  32
+          line: 34 0
+          line: 36 17
+          line: 38 88
+          line: 40 140
+          line: 43 187
+          line: 45 270
+          line: 47 305
+          line: 48 331
+          line: 50 348
+          line: 51 381
+          line: 52 420
+          line: 54 449
+          line: 56 465
+          line: 57 471
+          line: 60 473
+          line: 62 508
+          line: 68 554
+          line: 70 604
+          line: 74 650
+          line: 76 704
+          line: 80 721
+          line: 82 834
+          line: 84 869
+          line: 85 895
+          line: 87 912
+          line: 88 945
+          line: 89 983
+          line: 91 1012
+          line: 93 1028
+          line: 94 1034
+          line: 95 1036
+          line: 97 1118
+          line: 99 1153
+          line: 100 1178
+          line: 102 1195
+          line: 103 1227
+          line: 104 1265
+          line: 106 1294
+          line: 108 1310
+          line: 109 1316
+          line: 111 1318
+          line: 113 1353
+          line: 114 1367
+          line: 115 1388
+          Complexity of rule ~control.9.0- u: 16
+    topic: ~xpostprocess 118
+        rule: ~xpostprocess.0.0 t:  120
+          line: 121 0
+          line: 123 17
+          line: 124 47
+          line: 126 104
+          line: 127 114
+          line: 129 155
+          line: 130 161
+          Complexity of rule ~xpostprocess.0.0- t: 2
+file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/TEST/tutorial.top 0
+    topic: ~introductions 1
+        rule: ~introductions.0.0-HI t:  3
+          line: 3 0
+          line: 4 109
+        rule: ~introductions.1.0-SOURCE u:  6
+          line: 7 0
+          line: 8 27
+          line: 9 39
+          line: 10 52
+        rule: ~introductions.2.0 u:  12
+          line: 13 0
+          line: 14 10
+          line: 15 23
+        rule: ~introductions.3.0 u:  17
+          line: 17 0
+        rule: ~introductions.4.0 u:  21
+          line: 21 0
+        rule: ~introductions.5.0-DEFAULT u:  23
+          line: 24 0
+    topic: ~question 26
+        rule: ~question.0.0 u:  28
+          line: 29 0
+          line: 30 9
+        rule: ~question.1.0 u:  32
+          line: 33 0
+          line: 34 9
+        rule: ~question.2.0 u:  36
+          line: 37 0
+        rule: ~question.3.0-WHAT u:  39
+          line: 39 0
+        rule: ~question.4.0 u:  41
+          line: 41 0
+        rule: ~question.5.0 u:  43
+          line: 43 0
+        rule: ~question.6.0 u:  45
+          line: 45 0
+          line: 46 5

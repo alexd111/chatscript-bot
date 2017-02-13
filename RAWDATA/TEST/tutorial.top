@@ -1,0 +1,45 @@
+topic: ~introductions keep repeat []
+
+t: HI () [Hello] [Hi] [Hey], I will help plan your travel. Just tell me where you are and where you want to go to.
+  $issue = null # initialize the current issue
+
+u: SOURCE (be * at _*)
+  OK, you want to go from _0.
+  $source = '_0 # remember the source
+  $issue = null # clear the current issue
+  ^respond(~question)
+
+u: (go to _*)
+  $target = '_0
+  $issue = null
+  ^respond(~question)
+
+u: ($issue=source _*) ^reuse(SOURCE)
+  # If current issue is source, then assume then
+  # user answered the question about his source
+
+u: ($issue=target _*) ^reuse(TARGET)
+
+u: DEFAULT ()
+  ^respond(~question)
+
+topic: ~question repeat keep nostay []
+
+u: (!$source)
+  $issue = source # remember that we asked user about his source
+  Where are you?
+
+u: (!$target)
+  $issue = target
+  Where do you want to go?
+
+u: ($source $target)
+  You want to go from $source to $target.
+
+u: WHAT (what are you) I am a bot.
+
+u: (tell me about yourself) ^reuse(WHAT) ^reuse(HI)
+
+u: (where do you live) I live on your computer.
+
+u: ([what where]) Good question.

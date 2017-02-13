@@ -1,0 +1,2 @@
+RAWDATA/HARRY/simplecontrol.top # default bot control
+RAWDATA/HOUSY/questions.top # housy bot data

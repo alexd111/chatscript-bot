@@ -81,41 +81,51 @@
           line: 129 155
           line: 130 161
           Complexity of rule ~xpostprocess.0.0- t: 2
-file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/TEST/tutorial.top 0
+file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
     topic: ~introductions 1
-        rule: ~introductions.0.0-HI t:  3
+        rule: ~introductions.0.0- t:  3
           line: 3 0
-          line: 4 109
-        rule: ~introductions.1.0-SOURCE u:  6
+          line: 4 36
+        rule: ~introductions.1.0-CITY u:  6
           line: 7 0
-          line: 8 27
-          line: 9 39
-          line: 10 52
-        rule: ~introductions.2.0 u:  12
-          line: 13 0
-          line: 14 10
-          line: 15 23
-        rule: ~introductions.3.0 u:  17
+          line: 8 38
+          line: 9 48
+        rule: ~introductions.2.0-BEDROOMS u:  11
+          line: 12 0
+          line: 13 12
+          line: 14 39
+        rule: ~introductions.3.0-PRICE u:  16
           line: 17 0
-        rule: ~introductions.4.0 u:  21
-          line: 21 0
-        rule: ~introductions.5.0-DEFAULT u:  23
-          line: 24 0
-    topic: ~question 26
-        rule: ~question.0.0 u:  28
-          line: 29 0
-          line: 30 9
-        rule: ~question.1.0 u:  32
+          line: 18 9
+          line: 19 42
+        rule: ~introductions.4.0-DEFAULT u:  21
+          line: 22 0
+    topic: ~question 24
+        rule: ~question.0.0 u:  26
+          line: 27 0
+        rule: ~question.1.0 u:  29
+          line: 30 0
+        rule: ~question.2.0 u:  32
           line: 33 0
-          line: 34 9
-        rule: ~question.2.0 u:  36
-          line: 37 0
-        rule: ~question.3.0-WHAT u:  39
-          line: 39 0
-        rule: ~question.4.0 u:  41
-          line: 41 0
-        rule: ~question.5.0 u:  43
+        rule: ~question.3.0 u:  35
+          line: 36 0
+        rule: ~question.3.1 a:  37
+          line: 38 0
+        rule: ~question.3.2 a:  39
+          line: 40 0
+        rule: ~question.4.0 u:  42
           line: 43 0
-        rule: ~question.6.0 u:  45
-          line: 45 0
-          line: 46 5
+          line: 44 79
+          line: 45 89
+          line: 46 121
+          line: 47 158
+          line: 48 226
+          line: 49 247
+          line: 50 270
+          line: 51 279
+          line: 52 308
+          line: 54 329
+          line: 55 336
+          line: 56 358
+          line: 57 360
+          line: 58 368

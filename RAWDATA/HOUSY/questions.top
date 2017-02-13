@@ -1,0 +1,57 @@
+topic: ~introductions []
+
+t: Hi, I will help you find a place to live!.
+ ^respond(~question)
+
+u: CITY (be * in _*)
+   OK, you want to look for houses in _0.
+   $city = '_0
+   ^respond(~question)
+
+u: BEDROOMS (_* bedrooms)
+   $bedrooms = '_0
+   OK, you want $bedrooms bedrooms.
+   ^respond(~question)
+
+u: PRICE (_* per month)
+    $price = '_0
+    Your max price is $price per month.
+    ^respond(~question)
+
+u: DEFAULT ()
+   ^respond(~question)
+
+topic: ~question repeat keep nostay []
+
+u: (!$city)
+   Where are you looking for a place?
+
+u: (!$bedrooms)
+   How many bedrooms are you looking for?
+
+u: (!$price)
+  What is the max price per month you are willing to pay?
+
+u: (!$bills)
+  Would you like bills included?
+  a: (~yes)
+    $bills = 1
+  a: (~no)
+    $bills = 0
+
+u: ($city $bedrooms $price $bills)
+   You are looking for a $bedrooms bedroom house in $city. Your budget is $price.
+   $$url = http://127.0.0.1:5000/
+   $$url += accommodation/bristol/4/500/1
+   Url is $$url
+   (-getHouses) $_tmp = ^jsonparse( ^jsonopen(GET $$url) )
+    ^jsonwrite( $_tmp ) \n
+    ^jsontree( $_tmp ) \n
+    $_i = 0
+    $_size = ^length($_tmp)
+    loop($_size)
+    {
+      url: $_tmp[$_i].url
+      $_i += 1
+    }
+    name: $_tmp.hello

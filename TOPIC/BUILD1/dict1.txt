@@ -1,1 +1,2 @@
 ﻿+ defaultbot 
++ bedrooms NOUN NOUN_PLURAL KINDERGARTEN 

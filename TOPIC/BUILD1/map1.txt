@@ -116,16 +116,16 @@ file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
         rule: ~question.4.0 u:  42
           line: 43 0
           line: 44 79
-          line: 45 89
-          line: 46 121
-          line: 47 158
-          line: 48 226
-          line: 49 247
-          line: 50 270
-          line: 51 279
-          line: 52 308
-          line: 54 329
-          line: 55 336
-          line: 56 358
-          line: 57 360
-          line: 58 368
+          line: 45 143
+          line: 46 177
+          line: 47 208
+          line: 48 237
+          line: 49 298
+        rule: ~question.4.1 a:  50
+          line: 51 0
+        rule: ~question.4.2 a:  52
+          line: 53 0
+        rule: ~question.5.0 u:  55
+          line: 56 0
+          line: 57 47
+          line: 58 80

@@ -39,19 +39,19 @@ u: (!$bills)
   a: (~no)
     $bills = 0
 
-u: ($city $bedrooms $price $bills)
+u: ($city $bedrooms $price $bills !$view)
    You are looking for a $bedrooms bedroom house in $city. Your budget is $price.
-   $$url = http://127.0.0.1:5000/
-   $$url += accommodation/bristol/4/500/1
-   Url is $$url
-   (-getHouses) $_tmp = ^jsonparse( ^jsonopen(GET $$url) )
-    ^jsonwrite( $_tmp ) \n
-    ^jsontree( $_tmp ) \n
-    $_i = 0
-    $_size = ^length($_tmp)
-    loop($_size)
-    {
-      url: $_tmp[$_i].url
-      $_i += 1
-    }
-    name: $_tmp.hello
+   $url = ^join(http://127.0.0.1:5000/accommodation/ $city/)
+   $url = ^join($url $bedrooms/)
+   $url = ^join($url $price/)
+   $url = ^join($url $bills)
+   (-getHouses) $json = ^jsonparse( ^jsonopen(GET $url) )
+    I have found $_size houses for you. Would you like to view them? \n
+    a: (~yes)
+      $view = 1
+    a: (~no)
+      $view = 0
+
+u: ($city $bedrooms $price $bills $view)
+  $json2 = ^jsonparse( ^jsonopen(GET $url) )
+   JSONSTRING ^jsonwrite( $json2 ) \n

@@ -1,2 +1,3 @@
-﻿+ defaultbot 
+﻿+ looking KINDERGARTEN 
++ defaultbot 
 + bedrooms NOUN NOUN_PLURAL KINDERGARTEN 

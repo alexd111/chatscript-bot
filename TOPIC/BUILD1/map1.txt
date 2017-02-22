@@ -86,26 +86,29 @@ file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
         rule: ~introductions.0.0- t:  3
           line: 3 0
           line: 4 36
-        rule: ~introductions.1.0-CITY u:  6
+        rule: ~introductions.1.0-DEFAULT u:  6
           line: 7 0
-          line: 8 38
-          line: 9 48
-        rule: ~introductions.2.0-BEDROOMS u:  11
+    topic: ~question 9
+        rule: ~question.0.0 u:  11
           line: 12 0
-          line: 13 12
-          line: 14 39
-        rule: ~introductions.3.0-PRICE u:  16
-          line: 17 0
-          line: 18 9
-          line: 19 42
-        rule: ~introductions.4.0-DEFAULT u:  21
+        rule: ~question.0.1 a:  13
+          line: 14 0
+        rule: ~question.0.2 a:  15
+          line: 16 0
+          line: 17 8
+        rule: ~question.1.0 u:  19
+          line: 20 0
+        rule: ~question.1.1 a:  21
           line: 22 0
-    topic: ~question 24
-        rule: ~question.0.0 u:  26
+        rule: ~question.1.2 a:  23
+          line: 24 0
+        rule: ~question.2.0 u:  26
           line: 27 0
-        rule: ~question.1.0 u:  29
-          line: 30 0
-        rule: ~question.2.0 u:  32
+        rule: ~question.2.1 a:  28
+          line: 29 0
+        rule: ~question.2.2 a:  30
+          line: 31 0
+        rule: ~question.2.3 a:  32
           line: 33 0
         rule: ~question.3.0 u:  35
           line: 36 0
@@ -116,16 +119,19 @@ file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
         rule: ~question.4.0 u:  42
           line: 43 0
           line: 44 79
-          line: 45 143
-          line: 46 177
-          line: 47 208
-          line: 48 237
-          line: 49 298
-        rule: ~question.4.1 a:  50
-          line: 51 0
-        rule: ~question.4.2 a:  52
-          line: 53 0
-        rule: ~question.5.0 u:  55
+          line: 45 94
+          line: 46 158
+          line: 47 192
+          line: 48 223
+          line: 49 258
+          line: 50 287
+          line: 51 333
+          line: 52 360
+        rule: ~question.4.1 a:  53
+          line: 54 0
+        rule: ~question.4.2 a:  55
           line: 56 0
-          line: 57 47
-          line: 58 80
+        rule: ~question.5.0 u:  58
+          line: 59 0
+          line: 60 47
+          line: 61 80

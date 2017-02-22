@@ -3,37 +3,37 @@ topic: ~introductions []
 t: Hi, I will help you find a place to live!.
  ^respond(~question)
 
-u: CITY (be * in _*)
-   OK, you want to look for houses in _0.
-   $city = '_0
-   ^respond(~question)
-
-u: BEDROOMS (_* bedrooms)
-   $bedrooms = '_0
-   OK, you want $bedrooms bedrooms.
-   ^respond(~question)
-
-u: PRICE (_* per month)
-    $price = '_0
-    Your max price is $price per month.
-    ^respond(~question)
-
 u: DEFAULT ()
    ^respond(~question)
 
 topic: ~question repeat keep nostay []
 
 u: (!$city)
-   Where are you looking for a place?
+  Where are you looking for a place?
+  a: (in _*)
+  $city = '_0
+  a: (_*)
+  $city = '_0
+  ^respond(~question)
 
 u: (!$bedrooms)
-   How many bedrooms are you looking for?
+   Ok you are looking in $city. How many bedrooms are you looking for?
+   a: (_~number bedroom)
+   $bedrooms = _0
+   a: (_~number)
+   $bedrooms = _0
 
 u: (!$price)
-  What is the max price per month you are willing to pay?
+  OK, you want $bedrooms bedrooms. What is the max price per month you are willing to pay?
+  a: (* _~number per)
+    $price = _0
+  a: (_~number)
+    $price = _0
+  a: (_~money)
+    $price = _0
 
 u: (!$bills)
-  Would you like bills included?
+  Your max price is $price per month. Would you like bills included?
   a: (~yes)
     $bills = 1
   a: (~no)
@@ -41,11 +41,14 @@ u: (!$bills)
 
 u: ($city $bedrooms $price $bills !$view)
    You are looking for a $bedrooms bedroom house in $city. Your budget is $price.
+   $furnished = 1
    $url = ^join(http://127.0.0.1:5000/accommodation/ $city/)
    $url = ^join($url $bedrooms/)
    $url = ^join($url $price/)
+   $url = ^join($url $furnished/)
    $url = ^join($url $bills)
-   (-getHouses) $json = ^jsonparse( ^jsonopen(GET $url) )
+   $json = ^jsonparse( ^jsonopen(GET $url) )
+    $_size = ^length($json)
     I have found $_size houses for you. Would you like to view them? \n
     a: (~yes)
       $view = 1

@@ -82,61 +82,61 @@
           line: 130 161
           Complexity of rule ~xpostprocess.0.0- t: 2
 file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
-    topic: ~introductions 1
-        rule: ~introductions.0.0- t:  3
+    topic: ~questions 1
+        rule: ~questions.0.0- t:  3
           line: 3 0
           line: 4 36
-        rule: ~introductions.1.0-DEFAULT u:  6
+        rule: ~questions.1.0-DEFAULT u:  6
           line: 7 0
     topic: ~question 9
         rule: ~question.0.0 u:  11
           line: 12 0
-        rule: ~question.0.1 a:  13
-          line: 14 0
-        rule: ~question.0.2 a:  15
-          line: 16 0
-          line: 17 8
-        rule: ~question.1.0 u:  19
-          line: 20 0
-        rule: ~question.1.1 a:  21
+        rule: ~question.0.1 a:  14
+          line: 15 0
+        rule: ~question.0.2 a:  17
+          line: 18 0
+          line: 19 8
+        rule: ~question.1.0 u:  21
           line: 22 0
-        rule: ~question.1.2 a:  23
-          line: 24 0
-        rule: ~question.2.0 u:  26
-          line: 27 0
-        rule: ~question.2.1 a:  28
+        rule: ~question.1.1 a:  24
+          line: 25 0
+        rule: ~question.1.2 a:  28
           line: 29 0
-        rule: ~question.2.2 a:  30
-          line: 31 0
-        rule: ~question.2.3 a:  32
-          line: 33 0
-        rule: ~question.3.0 u:  35
-          line: 36 0
-        rule: ~question.3.1 a:  37
+        rule: ~question.2.0 u:  31
+          line: 32 0
+        rule: ~question.2.1 a:  34
+          line: 35 0
+        rule: ~question.2.2 a:  37
           line: 38 0
-        rule: ~question.3.2 a:  39
+        rule: ~question.2.3 a:  39
           line: 40 0
-        rule: ~question.4.0 u:  42
+        rule: ~question.3.0 u:  42
           line: 43 0
-        rule: ~question.4.1 a:  44
-          line: 45 0
-        rule: ~question.4.2 a:  46
-          line: 47 0
-        rule: ~question.5.0 u:  49
-          line: 50 0
-          line: 51 79
-          line: 52 143
-          line: 53 177
-          line: 54 208
-          line: 55 243
-          line: 56 272
-          line: 57 318
-          line: 58 345
-        rule: ~question.5.1 a:  59
-          line: 60 0
-        rule: ~question.5.2 a:  61
-          line: 62 0
-        rule: ~question.6.0 u:  64
-          line: 65 0
-          line: 66 47
-          line: 67 80
+        rule: ~question.3.1 a:  45
+          line: 46 0
+        rule: ~question.3.2 a:  48
+          line: 49 0
+        rule: ~question.4.0 u:  51
+          line: 52 0
+        rule: ~question.4.1 a:  54
+          line: 55 0
+        rule: ~question.4.2 a:  57
+          line: 58 0
+        rule: ~question.5.0 u:  60
+          line: 61 0
+          line: 62 79
+          line: 63 143
+          line: 64 177
+          line: 65 208
+          line: 66 243
+          line: 67 272
+          line: 68 318
+          line: 69 345
+        rule: ~question.5.1 a:  70
+          line: 71 0
+        rule: ~question.5.2 a:  72
+          line: 73 0
+        rule: ~question.6.0 u:  75
+          line: 76 0
+          line: 77 47
+          line: 78 80

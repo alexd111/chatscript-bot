@@ -1,4 +1,4 @@
-topic: ~introductions []
+topic: ~questions []
 
 t: Hi, I will help you find a place to live!.
  ^respond(~question)
@@ -10,23 +10,30 @@ topic: ~question repeat keep nostay []
 
 u: (!$city)
   Hello I am Housy. Which city are you looking in?
+  #! I am looking in Bristol
   a: (in _*)
   $city = '_0
+  #! Bristol
   a: (_*)
   $city = '_0
   ^respond(~question)
 
 u: (!$bedrooms)
    Ok you are looking in $city. How many bedrooms are you looking for?
+   #! Four bedrooms
    a: (_~number bedroom)
    $bedrooms = _0
+   #! 4
+   #! Four
    a: (_~number)
    $bedrooms = _0
 
 u: (!$price)
   OK, you want $bedrooms bedrooms. What is the max price per month you are willing to pay?
+  #! 500 per month
   a: (* _~number per)
     $price = _0
+  #! five hundred
   a: (_~number)
     $price = _0
   a: (_~money)
@@ -34,15 +41,19 @@ u: (!$price)
 
 u: (!$bills)
   Your max price is $price per month. Would you like bills included?
+  #! Sure
   a: (~yes)
     $bills = 1
+  #! No
   a: (~no)
     $bills = 0
 
 u: (!$furnished)
    And would you like a furnished place?
+  #! Ok
   a: (~yes)
     $furnished = 1
+  #! Nope
   a: (~no)
     $furnished = 0
 

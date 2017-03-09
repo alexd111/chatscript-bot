@@ -9,7 +9,7 @@ u: DEFAULT ()
 topic: ~question repeat keep nostay []
 
 u: (!$city)
-  Where are you looking for a place?
+  Hello I am Housy. Which city are you looking in?
   a: (in _*)
   $city = '_0
   a: (_*)
@@ -39,9 +39,15 @@ u: (!$bills)
   a: (~no)
     $bills = 0
 
-u: ($city $bedrooms $price $bills !$view)
+u: (!$furnished)
+   And would you like a furnished place?
+  a: (~yes)
+    $furnished = 1
+  a: (~no)
+    $furnished = 0
+
+u: ($city $bedrooms $price $bills $furnished !$view)
    You are looking for a $bedrooms bedroom house in $city. Your budget is $price.
-   $furnished = 1
    $url = ^join(http://127.0.0.1:5000/accommodation/ $city/)
    $url = ^join($url $bedrooms/)
    $url = ^join($url $price/)
@@ -55,6 +61,6 @@ u: ($city $bedrooms $price $bills !$view)
     a: (~no)
       $view = 0
 
-u: ($city $bedrooms $price $bills $view)
+u: ($city $bedrooms $price $bills $furnished $view)
   $json2 = ^jsonparse( ^jsonopen(GET $url) )
    JSONSTRING ^jsonwrite( $json2 ) \n

@@ -118,20 +118,25 @@ file: C:/Users/Alex/checkouts/ChatScript - Copy/RAWDATA/HOUSY/questions.top 0
           line: 40 0
         rule: ~question.4.0 u:  42
           line: 43 0
-          line: 44 79
-          line: 45 94
-          line: 46 158
-          line: 47 192
-          line: 48 223
-          line: 49 258
-          line: 50 287
-          line: 51 333
-          line: 52 360
-        rule: ~question.4.1 a:  53
-          line: 54 0
-        rule: ~question.4.2 a:  55
-          line: 56 0
-        rule: ~question.5.0 u:  58
-          line: 59 0
-          line: 60 47
-          line: 61 80
+        rule: ~question.4.1 a:  44
+          line: 45 0
+        rule: ~question.4.2 a:  46
+          line: 47 0
+        rule: ~question.5.0 u:  49
+          line: 50 0
+          line: 51 79
+          line: 52 143
+          line: 53 177
+          line: 54 208
+          line: 55 243
+          line: 56 272
+          line: 57 318
+          line: 58 345
+        rule: ~question.5.1 a:  59
+          line: 60 0
+        rule: ~question.5.2 a:  61
+          line: 62 0
+        rule: ~question.6.0 u:  64
+          line: 65 0
+          line: 66 47
+          line: 67 80

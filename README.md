@@ -1,3 +1,5 @@
+# Fork of https://github.com/bwilcox-1234/ChatScript for my final year dissertation
+
 # ChatScript
 Natural Language tool/dialog manager
 
